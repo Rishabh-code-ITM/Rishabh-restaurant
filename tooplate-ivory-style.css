@@ -1067,6 +1067,12 @@ img { display: block; max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 5px 16px 5px 5px;
+  background: rgba(251, 246, 238, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(43, 27, 18, 0.12);
 }
 .brand img { width: 44px; height: 44px; border-radius: 50%; box-shadow: 0 4px 16px rgba(43, 27, 18, 0.18); }
 .brand span {
@@ -1249,6 +1255,7 @@ img { display: block; max-width: 100%; height: auto; }
 .signature-logo { margin: 0 auto 18px; border-radius: 50%; box-shadow: 0 6px 24px rgba(43, 27, 18, 0.2); }
 
 @media (max-width: 1200px) {
+  .brand { padding: 4px; }
   .brand span { display: none; }
   .prices-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -1258,7 +1265,7 @@ img { display: block; max-width: 100%; height: auto; }
   .book-inner { grid-template-columns: 1fr; gap: 48px; }
 }
 @media (max-width: 768px) {
-  .brand { left: 16px; top: 16px; }
+  .brand { left: 16px; top: 16px; padding: 4px 14px 4px 4px; }
   .brand span { display: inline; font-size: 15px; }
   .prices { padding: 60px 24px; }
   .prices-grid { grid-template-columns: 1fr; gap: 24px; }
